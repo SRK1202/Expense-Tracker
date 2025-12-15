@@ -1,0 +1,34 @@
+import React from 'react';
+import "./App.css";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Login from './Pages/Auth/Login';
+import Register from './Pages/Auth/Register';
+// App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Pages/Home/Home';
+import SetAvatar from './Pages/Avatar/setAvatar';
+import Sidebar from './components/Sidebar';
+import Categories from './Pages/Categories/Categories';
+import Settings from './Pages/Settings/Settings';
+
+
+
+const App = () => {
+  return (
+    
+      <div className="App">
+      <BrowserRouter>
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/setAvatar" element={<SetAvatar />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </BrowserRouter>
+      </div>
+  )
+}
+export default App

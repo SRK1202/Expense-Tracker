@@ -1,0 +1,192 @@
+:root{
+  --bg: #0f0f10;
+  --panel: #141416;
+  --muted-panel: #1b1b1d;
+  --card: #151516;
+  --accent: #d6333f;
+  --accent-strong: #b02a33;
+  --text: #e6e6e6;
+  --muted: #9a9a9a;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 14px;
+}
+
+/* Global reset for the dark rounded theme */
+html,body,#root{
+  height:100%;
+}
+body{
+  margin:0;
+  background: linear-gradient(180deg, var(--bg), #0b0b0b);
+  color:var(--text);
+  font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Main content containers */
+.app-container{
+  padding: 24px;
+}
+
+/* Card style used across the app */
+.card-dark{
+  background: linear-gradient(180deg, var(--panel), var(--muted-panel));
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  padding: 18px;
+  color: var(--text);
+}
+
+.rounded-card{
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn-dark {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 999px;
+  padding: 8px 18px;
+}
+.btn-accent{
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 18px;
+  border: none;
+}
+
+/* Table tweaks to match dark style */
+.data-table{
+  width:100%;
+}
+.data-table thead th{
+  background: transparent;
+  color:var(--muted);
+  font-weight:600;
+  padding:12px 18px;
+}
+.data-table tbody td{
+  padding:14px 18px;
+  vertical-align: middle;
+}
+.data-table tbody tr{
+  background: var(--card);
+  margin-bottom:12px;
+  border-radius:10px;
+}
+
+/* Modal overrides */
+.modal-content{
+  background: linear-gradient(180deg, var(--panel), var(--muted-panel));
+  color:var(--text);
+  border-radius: 12px;
+  border: none;
+}
+
+/* Form controls */
+.form-control,
+.form-select {
+  background: var(--muted-panel);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 10px 14px;
+  transition: all 0.2s ease;
+}
+.form-control:focus,
+.form-select:focus {
+  background: var(--muted-panel);
+  color: var(--text);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(214, 51, 63, 0.1);
+}
+.form-control::placeholder {
+  color: var(--muted);
+}
+
+/* Form labels */
+.form-label {
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Modal header/footer */
+.modal-header {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 20px;
+}
+.modal-header .btn-close {
+  filter: invert(1);
+}
+.modal-footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 16px 20px;
+}
+
+/* Bootstrap buttons override */
+.btn-primary {
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover {
+  background: var(--accent-strong);
+}
+.btn-secondary {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 10px 18px;
+}
+.btn-secondary:hover {
+  background: var(--muted-panel);
+}
+
+/* Toggle button group (Expense/Income/Transfer) */
+.btn-group .btn {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.btn-group .btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Small UI elements */
+.widget{
+  padding:16px;
+  background: var(--panel);
+  border-radius: 12px;
+}
+
+/* Progress bar */
+.progress-track{
+  background: rgba(255,255,255,0.06);
+  height:10px;
+  border-radius: 10px;
+}
+.progress-fill{
+  background: linear-gradient(90deg,var(--accent),var(--accent-strong));
+  height:10px;
+  border-radius: 10px;
+}
+
+/* Small utility */
+.muted{ color: var(--muted); }
+
+/* Styling for the left sidebar */
+.sidebar-dark{
+  background: transparent;
+  min-height:100vh;
+  padding:24px;
+}

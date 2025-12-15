@@ -1,0 +1,32 @@
+.lnk{
+    text-decoration: none;
+}
+.btnStyle{
+    background-color: red;
+    border: 2px solid red;
+}
+.btnStyle:hover{
+    background-color: rgb(75, 11, 11);
+}
+
+/* Remove body padding for auth pages - using more compatible selector */
+.login-page,
+.register-page {
+    position: relative;
+}
+
+/* Override body padding when on auth pages */
+body.login-auth,
+body.register-auth {
+    padding-left: 0 !important;
+}
+
+/* Ensure containers are centered */
+.login-page .container,
+.register-page .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+}

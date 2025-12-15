@@ -1,0 +1,146 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "1764855832763",
+      "name": "SRK",
+      "email": "srk@gmail.com",
+      "password": "55555"
+    },
+    {
+      "id": "1764874832170",
+      "name": "Jhansi",
+      "email": "jhansi28@gmail.com",
+      "password": "55555"
+    },
+    {
+      "id": "1765207115811",
+      "name": "siva rama krishna",
+      "email": "sivaramakrishna@gmail.com",
+      "password": "2345"
+    },
+    {
+      "id": 1765531619972,
+      "name": "Siva",
+      "email": "addankisivaram@gamil.com",
+      "password": "Siva123%"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "7cbe",
+      "title": "fxgnfgn",
+      "amount": "563",
+      "description": "dfrrdf",
+      "category": "Groceries",
+      "date": "2025-12-04",
+      "transactionType": "Expense",
+      "userId": "1764855832763"
+    },
+    {
+      "id": "528e",
+      "title": "thnbfstjnf",
+      "amount": "7828",
+      "description": "sgbdf",
+      "category": "Rent",
+      "date": "2025-12-04",
+      "transactionType": "Expense",
+      "userId": "1764855832763"
+    },
+    {
+      "id": "12af",
+      "title": "hnfyyjnm",
+      "amount": "787",
+      "description": "ftnjfyjn",
+      "category": "Food",
+      "date": "2025-12-04",
+      "transactionType": "Expense",
+      "userId": "1764855832763"
+    },
+    {
+      "id": "ef1c",
+      "title": "fthcfgn",
+      "amount": "4542",
+      "description": "fnbfgn",
+      "category": "Entertainment",
+      "date": "2025-12-04",
+      "transactionType": "Expense",
+      "userId": "1764855832763"
+    },
+    {
+      "id": "091b",
+      "title": "fx ncgfn",
+      "amount": "4524",
+      "description": "dfhtdrhe",
+      "category": "Transportation",
+      "date": "2025-12-04",
+      "transactionType": "Expense",
+      "userId": "1764855832763"
+    },
+    {
+      "id": "8578",
+      "title": "abcde",
+      "amount": "100000",
+      "description": "sdfgvbhnjm,",
+      "category": "Salary",
+      "date": "2025-12-01",
+      "transactionType": "Credit",
+      "userId": "1764855832763"
+    },
+    {
+      "id": "7bbc",
+      "title": "D-mart",
+      "amount": "1200",
+      "description": ".....",
+      "category": "Groceries",
+      "date": "2025-12-05",
+      "transactionType": "Credit",
+      "userId": 1765207115811
+    },
+    {
+      "id": "ec64",
+      "title": "oil",
+      "amount": "500",
+      "description": "....",
+      "category": "Transportation",
+      "date": "2025-12-06",
+      "transactionType": "Expense",
+      "userId": 1765207115811
+    },
+    {
+      "id": "4ce3",
+      "title": "birthday",
+      "amount": "7000",
+      "description": ".....",
+      "category": "Food",
+      "date": "2025-12-07",
+      "transactionType": "Credit",
+      "userId": 1765207115811
+    },
+    {
+      "id": "5bab",
+      "title": "Salary",
+      "amount": "200000",
+      "description": "Salary credited",
+      "category": "Salary",
+      "date": "2025-12-01",
+      "transactionType": "Credit",
+      "userId": 1765531619972
+    },
+    {
+      "id": "9e7e",
+      "title": "Shoppping",
+      "amount": "10000",
+      "description": "Birthday Shopping",
+      "category": "Other",
+      "date": "2025-12-05",
+      "transactionType": "Expense",
+      "userId": 1765531619972
+    }
+  ]
+}
